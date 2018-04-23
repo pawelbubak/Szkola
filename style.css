@@ -1,0 +1,800 @@
+html {
+    font-size: 10px;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+body {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+/*.item1 { grid-area: header; }
+.item2 { grid-area: main; }
+.item3 { grid-area: footer; }*/
+
+#grid-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 'header' 'main' 'footer';
+}
+
+.site-header-links {
+    margin: 0px;
+    padding: 0px;
+    background-color: #006991;
+    color: #fff;
+}
+
+.site-header-links .container {
+    width: auto;
+    margin: 0 auto;
+    padding: 0px;
+    height: auto;
+}
+
+.site-header-links ul {
+    padding: 0px;
+    margin: 0px;
+    height: 34px;
+    width: 100%;
+    text-align: right;
+    display: inline-block;
+}
+
+.site-header-links ul > li {
+    display: inline-block;
+    height: 100%;
+    line-height: 100%;
+    margin-right: 0px;
+    border: none;
+    -webkit-transition: background-color .2s;
+    transition: background-color .2s;
+    border-left: 1px solid #004b66;
+}
+
+.site-header-links ul > li:hover {
+    background-color: #0099cc;
+}
+
+
+.site-header-links ul > li:last-child {
+    background-color: inherit;
+}
+
+.site-header-links ul > li:last-child a:hover {
+    cursor: default;
+}
+
+.site-header-links ul > li a {
+    color: #fff;
+    font-size: 1.25rem;
+    display: block;
+    width: 100%;
+    padding: 7.5px 15px 7.5px;
+}
+
+.site-header-links img {
+    height: 12px;
+    margin: 0px;
+    margin-top: 2px;
+    margin-bottom: -1px;
+    padding: 0px;
+}
+
+header {
+    background-color: #0099cc;
+    color: #fff;
+}
+
+.nav-bar {
+    width: 1140px;
+    margin: 0 auto 15px auto;
+    text-align: center;
+    padding: 5px;
+    padding-top: 20px;
+}
+
+.nav-bar figure {
+    display: inline-block;
+    margin: 0px 40px;
+    padding: 0px;
+}
+
+.nav-bar img {
+    height: 100px;
+}
+
+.main-nav {
+    width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.main-nav ul {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: inline-block;
+    height: 50px;
+    line-height: 22px;
+    font-size: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Exo 2", sans-serif;
+}
+
+.main-nav ul > li {
+    background-color: #0099cc;
+    display: block;
+    -webkit-transition: background-color .2s;
+    transition: background-color .2s;
+}
+
+.main-nav ul.navbar-nav > li {
+    width: 25%;
+    float: left;
+    border-left: 1px solid #004b66;
+}
+
+.main-nav ul.navbar-nav > li:last-child {
+    border-right: 1px solid #004b66;
+}
+
+.main-nav ul.navbar-nav > li:last-child:after {
+    clear: both;
+}
+
+.main-nav ul > li a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 14px;
+}
+
+.main-nav ul > li:hover {
+    background-color: #006991;
+}
+
+.main-nav ul.navbar-nav > li ul {
+    display: block;
+    visibility: hidden;
+    position: relative;
+    opacity: 0;
+    height: 0px;
+    z-index: 100;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.main-nav ul.navbar-nav > li:hover ul {
+    visibility: visible;
+    height: auto;
+    opacity: 1;
+}
+
+.main-nav ul.navbar-nav > li ul > li {
+    position: relative;
+    background-color: #004b66;
+    z-index: 100;
+}
+
+.main-nav ul.navbar-nav > li ul > li:hover {
+    background-color: #006991;
+}
+
+main {
+    width: 1140px;
+    margin: 5px auto 0px auto;
+}
+
+main header {
+    background-color: inherit;
+    color: inherit;
+    margin: 0px auto 5px auto;
+    padding: 5px 0px 5px 0px;
+    font-family: "Exo 2", sans-serif;
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 50px;
+}
+
+main>section {
+    margin-bottom: 30px;
+}
+
+.slider {
+    height: 300px;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    margin-top: -250px
+}
+
+#information-section article {
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 2px rgba(119,119,119,.15);
+    box-shadow: 0 0 2px rgba(119,119,119,.15);
+    padding: 10px 5px;
+    font-family: "Exo 2", sans-serif;
+    font-size: 20px;
+    color: #333;
+    font-weight: 400;
+}
+
+.news-section section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.news-section article {
+    margin: 0px;
+    padding: 3px;
+    width: 33%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.news-section figure {
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 2px rgba(119,119,119,.15);
+    box-shadow: 0 0 2px rgba(119,119,119,.15);
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+}
+
+.news-picture {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.news-section img {
+    height: 500px;
+    width: 100%;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.news-section figure:hover img {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+}
+
+.news-section figure:hover {
+    color: #006991;
+}
+
+.news-section figcaption {
+    position: relative;
+    border-top: 1px solid #ccc;
+    background-color: inherit;
+    width: 100%;
+    height: 100px;
+    font-family: "Exo 2", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.news-section figcaption span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    max-height: 100px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+}
+
+hr {
+    margin: 0px;
+    color: #333 !important;
+}
+
+.event-section {
+    width: 25%;
+    padding: 3px;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.event {
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Exo 2", sans-serif;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 2px rgba(119,119,119,.15);
+    box-shadow: 0 0 2px rgba(119,119,119,.15);
+    -webkit-transition: all .2s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.event div {
+    display: inline-block;
+    width: 80%;
+    padding-left: 10px;
+    padding-top: 15px;
+    line-height: 25px;
+    color: #333;
+    vertical-align: top;
+    max-height: 65px;
+    overflow: hidden;
+}
+
+.event div.event-date {
+    background-color: #006991;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 20% !important;
+    margin: 10px 0px;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-family: Roboto;
+    line-height: 25px;
+    max-height: none;
+}
+
+.event-date span {
+    display: block;
+}
+
+.month {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.event header {
+    margin: 0px;
+    padding: 0px 10px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
+    max-height: 90px;
+}
+
+.event:hover {
+    background-color: #006991;
+}
+
+.event:hover div {
+    color: #fff;
+}
+
+.picture-container {
+    width: 33.3%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 2.5px 5px;
+    display: inline-block;
+    height: 300px;
+}
+
+.picture-container a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.picture-container div {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.picture-container div::before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: '';
+    background-color: #006991;
+    opacity: 0.6;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.picture-container div:hover::before {
+    background-color: #fff;
+    opacity: 0.9;
+}
+
+.picture-container div::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-weight: 600;
+    color: #fff;
+    content: '';
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.picture-container div:hover::after {
+    color: #006991;
+}
+
+#class_1 {
+    background-image: url(image/mat-fiz.png);
+}
+
+#class_1::after {
+    content: 'Liceum Politechniczne';
+}
+
+#class_2 {
+    background-image: url(image/eng.png);
+}
+
+#class_2::after {
+    content: 'Business english';
+}
+
+#class_3 {
+    background-image: url(image/bud-dro.png);
+}
+
+#class_3::after {
+    content: 'Technikum Budowy Dróg';
+}
+
+#class_4 {
+    background-image: url(image/geo.png);
+}
+
+#class_4::after {
+    content: 'Technikum Geodezyjne';
+}
+
+#class_5 {
+    background-image: url(image/poj-sam.png);
+}
+
+#class_5::after {
+    content: 'Mechanik pojazdów samochodowych';
+}
+
+#class_6 {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#class_6::before {
+    background-color: inherit;
+}
+
+#class_6::after {
+    color: #006991;
+    content: 'Więcej...';
+}
+
+#class_6:hover::after {
+    color: #3399cc;
+}
+
+footer {
+    position: absolute;
+    height: 50px;
+    bottom: 0px;
+    width: 100%;
+    background-color: #3399cc;
+    color: #fff;
+    text-align: center;
+    font-family: "Exo 2", sans-serif;
+    font-size: 14px;
+    padding: 0px;
+}
+
+.footer-bar {
+    line-height: 40px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.socials {
+    background-color: #004b66;
+    position: fixed;
+    top: 35%;
+    font-size: 30px;
+    padding: 3px 3px 3px 0px;
+    color: #fff;
+    -webkit-border-top-right-radius: 7px;
+    -webkit-border-bottom-right-radius: 7px;
+    -moz-border-radius-topright: 7px;
+    -moz-border-radius-bottomright: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.socials span {
+    padding: 2px;
+    display: block;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.socials span:hover {
+    -webkit-transform: scale(1.15) translateX(3px);
+    transform: scale(1.15) translateX(3px);
+    background-color: #006991;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.socials span a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+#extension-button {
+    background-color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    -webkit-box-shadow: 0 0 2px rgba(119,119,119,.15);
+    box-shadow: 0 0 2px rgba(119,119,119,.15);
+}
+
+#extension-button a {
+    text-decoration: none;
+    color: #004b66;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+#extension-button a:hover {
+    color: #006991;
+}
+
+.person-container {
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    -webkit-box-shadow: 0 0 2px rgba(119,119,119,.15);
+    box-shadow: 0 0 2px rgba(119,119,119,.15);
+    text-align: center;
+}
+
+.person-container img {
+    height: 350px;
+    width: 350px;
+    display: inline-block;
+}
+
+.person-container figcaption {
+    display: inline-block;
+    position: relative;
+    height: 350px;
+    text-align: center;
+    width: 60%;
+}
+
+.person-container figcaption div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#l_1 {
+    background-image: url(image/arty.jpg);
+}
+
+#l_1::after {
+    content: 'Liceum Artystyczne';
+}
+
+#l_2 {
+    background-image: url(image/eng.png);
+}
+
+#l_2::after {
+    content: 'Business english';
+}
+
+#l_3 {
+    background-image: url(image/fil-praw.png);
+}
+
+#l_3::after {
+    content: 'Liceum filologiczno-prawne';
+}
+
+#l_4 {
+    background-image: url(image/media.jpg);
+}
+
+#l_4::after {
+    content: 'Liceum medialne';
+}
+
+#l_5 {
+    background-image: url(image/piel.jpg);
+}
+
+#l_5::after {
+    content: 'Liceum pielęgniarsko-położnicze';
+}
+
+#l_6 {
+    background-image: url(image/mat-fiz.png);
+}
+
+#l_6::after {
+    content: 'Liceum Politechniczne';
+}
+
+#l_7 {
+    background-image: url(image/przyr.jpg);
+}
+
+#l_7::after {
+    content: 'Liceum Przyrodnicze';
+}
+
+#l_8 {
+    background-image: url(image/psycho.jpg);
+}
+
+#l_8::after {
+    content: 'Liceum Psychologiczne';
+}
+
+#l_9 {
+    background-image: url(image/sport.jpg);
+}
+
+#l_9::after {
+    content: 'Liceum Trenersko-instruktorskie';
+}
+
+#t_1 {
+    background-image: url(image/bud-dro.png);
+}
+
+#t_1::after {
+    content: 'Technikum Budowy Dróg';
+}
+
+#t_2 {
+    background-image: url(image/ekonom.jpg);
+}
+
+#t_2::after {
+    content: 'Techinkum Ekonomiczne';
+}
+
+#t_3 {
+    background-image: url(image/geo.png);
+}
+
+#t_3::after {
+    content: 'Technikum Geodezyjne';
+}
+
+#t_4 {
+    background-image: url(image/infa.jpg);
+}
+
+#t_4::after {
+    content: 'Technikum Informatyczne';
+}
+
+#t_5 {
+    background-image: url(image/tor.jpg);
+}
+
+#t_5::after {
+    content: 'Technikum Organizacji Reklamy';
+}
+
+#z_1 {
+    background-image: url(image/fryz.jpg);
+}
+
+#z_1::after {
+    content: 'Fryzjer';
+}
+
+#z_2 {
+    background-image: url(image/poj-sam.jpg);
+}
+
+#z_2::after {
+    content: 'Mechanik pojazdów samochodowych';
+}
+
+#z_3 {
+    background-image: url(image/sprz.jpg);
+}
+
+#z_3::after {
+    content: 'Sprzedawca';
+}
